@@ -26,6 +26,17 @@ The current build supports testing of Oracle Database versions 10g, 11g, and 12c
 - Docker Compose deployment
 
 ---
+## Quick Start
+
+```bash
+git clone https://github.com/<organisation>/musang.git
+cd musang
+cp .env.example .env
+
+# Place instantclient12.zip in the project root
+
+docker compose up --build
+```
 
 ## Architecture
 
@@ -45,28 +56,7 @@ The application consists of the following containers:
 
 ### Supported Platforms
 
-Musang is designed to run on:
-
-- Ubuntu
-- Debian
-- Kali Linux
-- Linux Mint
-- Fedora
-- Rocky Linux
-- AlmaLinux
-- Red Hat Enterprise Linux
-- SUSE Linux
-
-provided Docker is installed.
-
-### Hardware Requirements
-
-Recommended:
-
-- 2 CPU cores
-- 4 GB RAM minimum
-- 8 GB RAM recommended
-- 10 GB free disk space
+Musang is designed to run on most popular modern Linuxes, provided Docker is installed.
 
 ### CPU Architecture
 
@@ -96,7 +86,7 @@ Verify:
 ```bash
 docker --version
 docker compose version
-
+```
 # Oracle Instant Client
 
 Oracle Instant Client is required for Oracle database connectivity.
